@@ -63,7 +63,7 @@ body {
   z-index: 1;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .indicator::before {
   content: "";
@@ -107,4 +107,23 @@ body {
   height: 400px;
   background: var(--clr);
   border-radius: 20px;
+}
+.content .contentBx {
+  position: absolute;
+  inset: 0;
+  padding: 50px;
+  visibility: hidden;
+  opacity: 0;
+  /* transition: 0.1s; */
+}
+.tabs input:nth-child(1):checked ~ .content .contentBx:nth-child(1),
+.tabs input:nth-child(2):checked ~ .content .contentBx:nth-child(2),
+.tabs input:nth-child(3):checked ~ .content .contentBx:nth-child(3),
+.tabs input:nth-child(4):checked ~ .content .contentBx:nth-child(4) {
+  opacity: 1;
+  visibility: visible;
+}
+.content .contentBx h2,
+.content .contentBx p {
+  color: #fff;
 }
