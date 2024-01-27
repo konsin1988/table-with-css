@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --clr: #a12db5;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #222;
+}
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 400px;
+}
+.tabs {
+  position: relative;
+  width: 80px;
+  padding: 40px 0;
+}
+.tabs input {
+  appearance: none;
+  display: none;
+}
+.tabs .icon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.tabs .icon label {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+  opacity: 0.25;
+  transition: 0.5s;
+  cursor: pointer;
+  background: #fff5;
+}
+.tabs .input:nth-child(1):checked ~ .icon label:nth-child(1),
+.tabs .input:nth-child(2):checked ~ .icon label:nth-child(2),
+.tabs .input:nth-child(3):checked ~ .icon label:nth-child(3),
+.tabs .input:nth-child(4):checked ~ .icon label:nth-child(4) {
+  opacity: 1;
+}

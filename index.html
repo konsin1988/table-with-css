@@ -9,11 +9,31 @@
   <body>
     <div class="container">
       <div class="tabs">
-        <input id="home" type="radio" name="group" />
+        <input id="home" type="radio" name="group" checked />
         <input id="about" type="radio" name="group" />
         <input id="settings" type="radio" name="group" />
         <input id="security" type="radio" name="group" />
+        <div class="icon">
+          <label for="home"><ion-icon name="home-outline"></ion-icon></label>
+          <label for="about"><ion-icon name="people-outline"></ion-icon></label>
+          <label for="settings"
+            ><ion-icon name="hammer-outline"></ion-icon
+          ></label>
+          <label for="security"
+            ><ion-icon name="lock-open-outline"></ion-icon
+          ></label>
+          <div class="indicator"></div>
+        </div>
+        <div class="content"></div>
       </div>
     </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
